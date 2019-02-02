@@ -1,0 +1,46 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 10;
+  text-align: center;
+  margin: 0;
+}
+h1{
+  font-size: 64px;
+}
+hr{
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-style: inset;
+  border-width: thin;
+}
+.footer{
+  background-color: #7FFFD4;
+  text-align: center;
+}
+#footerElements{
+  margin: auto;
+  padding: 100px;
+}
+#footerElements p{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+#footerElements hr{
+  border: 1px solid #FFFFFF;
+  margin-bottom: 100px;
+}
+#facebook {
+  display: inline-block;
+  margin-right: 30px;
+}
+#instagram {
+  display: inline-block;
+}
+.ver{
+  font-size: 10px;
+  color: #2F4F4F;
+  margin-bottom: 0;
+}
