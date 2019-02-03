@@ -76,7 +76,7 @@ hr{
 }
 .logo{
   float: left;
-  width: 420px;
+/*  width: 420px; */
   height: 100px;
   margin: auto;
   margin-left: 2.5%;
@@ -190,5 +190,6 @@ hr{
 }
 @media only screen and (max-width: 1349px){
   .hide{display: none;},
-  .menu{width: 40%;}
+  .menu{width: 40%;},
+  .logo{width: 20%;}
 }
