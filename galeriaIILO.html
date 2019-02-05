@@ -38,9 +38,16 @@
             <a class="hide" href="galeriaIILO.html"><li style="color: #000000">Galeria</li></a>
             <a class="hide" href="http://www.2loraciborz.pl/kalendarium.html"><li>Kalendarium</li></a>
             <a class="hide"><li>Rejestracja</li></a>
-            <li>
+            <a class="hamburger"><li>
+              <div class="menu">
+                <form class="hamMenu" action="galeriaIILO.html" method="post">
+                  <button name="button" class="btn2" type="button"></button>
+                </form>
+              </div>
+            </li></a>
+            <li style="width: 65px;">
               <div class="middle">
-                <form class="search-box" action="index.html" method="post">
+                <form class="search-box" action="galeriaIILO.html" method="post">
                   <input class="input" type="text" value="">
                   <button name="button" class="btn" type="button"></button>
                 </form>
@@ -51,7 +58,6 @@
           $('.btn').on('click',function(){
             $('.input').toggleClass('onclicked');
             $('.btn').toggleClass('close');
-            $('.menu').toggleClass('marg');
           });
          </script>
         </div>
