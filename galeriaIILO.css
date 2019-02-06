@@ -7,15 +7,6 @@ body{
 h1{
   font-size: 64px;
 }
-hr{
-  display: block;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  border-style: inset;
-  border-width: thin;
-}
 .footer{
   background-color: #fca300;
   text-align: center;
