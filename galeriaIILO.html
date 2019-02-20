@@ -20,6 +20,20 @@
 				           $('nav').removeClass('black');
 			           }
 		           })
+       $(window).on('scroll', function () {
+            if($(window).scrollTop()){
+                  $('.hide2').removeClass('cyan');
+            }
+            else{
+                 $('.hide2').addClass('cyan');
+                }
+              })
+      function openSlideMenu(){
+        document.getElementById('slideMenu').style.display = 'block';
+      }
+      function closeSlideMenu(){
+        document.getElementById('slideMenu').style.display = 'none';
+      }
 	   </script>
     </head>
     <body>
@@ -41,7 +55,7 @@
             <a class="hamburger"><li>
               <div class="menu">
                 <form class="hamMenu" action="galeriaIILO.html" method="post">
-                  <button name="button" class="btn2" type="button"></button>
+                  <button name="button" class="btn2" type="button" onclick="openSlideMenu()" onblur="closeSlideMenu()"></button>
                 </form>
               </div>
             </li></a>
@@ -62,14 +76,14 @@
          </script>
         </div>
       </nav>
-      <div class="slideMenu">
-        <a class="hide2" href="http://www.2loraciborz.pl/zasady-naboru.html">Rekrutacja</a>
-        <a class="hide2" href="http://absolwenci.2loraciborz.pl/">Absolwenci</a>
-        <a class="hide2" href="http://www.2loraciborz.pl/plan-lekcji.html">Plan Lekcji</a>
-        <a class="hide2" href="galeriaIILO.html" style="color:#000000;">Galeria</a>
-        <a class="hide2" href="http://www.2loraciborz.pl/kalendarium.html">Kalendarium</a>
-        <a class="hide2" href="rejestracjaIILO.html">Rejestracja</a>
-      </div>
+      <nav id="slideMenu">
+        <a class="hide2 cyan" href="http://www.2loraciborz.pl/zasady-naboru.html">Rekrutacja</a>
+        <a class="hide2 cyan" href="http://absolwenci.2loraciborz.pl/">Absolwenci</a>
+        <a class="hide2 cyan" href="http://www.2loraciborz.pl/plan-lekcji.html">Plan Lekcji</a>
+        <a class="hide2 cyan" href="galeriaIILO.html" style="color:#000000;">Galeria</a>
+        <a class="hide2 cyan" href="http://www.2loraciborz.pl/kalendarium.html">Kalendarium</a>
+        <a class="hide2 cyan" href="rejestracjaIILO.html">Rejestracja</a>
+      </nav>
       <h1>Galeria zdjęć</h1>
       <hr>
       <div class="xop-section">

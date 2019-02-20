@@ -321,21 +321,36 @@ h3:hover{
   color: #FFFFFF;
   height: 15%;
 }
-.slideMenu{
+#slideMenu{
+  display: none;
   text-decoration: none;
   position: sticky;
+  top: 100px;
   padding-bottom: 20px;
   overflow: hidden;
 }
-.slideMenu a{
+#slideMenu a{
   padding: 20px 0 20px 0;
   color: #FFFFFF;
   float: right;
   width: 100vw;
-  background-color: #008B8B;
   font-size: 26px;
 }
-.slideMenu a:hover{
+#slideMenu a:hover{
   background-color: #FFFFFF;
   color: #000000;
+}
+.cyan{
+  background-color: rgba(0,139,139,1);
+}
+.off{
+  margin-top: 100%;
+  position: relative;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 4px solid #FFFFFF;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s transform linear;
 }
