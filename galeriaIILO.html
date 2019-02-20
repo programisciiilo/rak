@@ -29,10 +29,12 @@
                 }
               })
       function openSlideMenu(){
-        document.getElementById('slideMenu').style.display = 'block';
+        document.getElementById('slideMenu').style.height = '416px';
+        document.getElementById('slideMenu').style.transition = '2s';
       }
       function closeSlideMenu(){
-        document.getElementById('slideMenu').style.display = 'none';
+        document.getElementById('slideMenu').style.height = '0px';
+        document.getElementById('slideMenu').style.transition = '2s';
       }
 	   </script>
     </head>
@@ -51,11 +53,11 @@
             <a class="hide" href="http://www.2loraciborz.pl/plan-lekcji.html"><li>Plan Lekcji</li></a>
             <a class="hide" href="galeriaIILO.html"><li style="color: #000000">Galeria</li></a>
             <a class="hide" href="http://www.2loraciborz.pl/kalendarium.html"><li>Kalendarium</li></a>
-            <a class="hide" href="rejestracjaIILO.html"><li>Rejestracja</li></a>
+            <a class="hide" href="http://galeria.2loraciborz.pl/login.php?referer=index.php"><li>Rejestracja</li></a>
             <a class="hamburger"><li>
               <div class="menu">
                 <form class="hamMenu" action="galeriaIILO.html" method="post">
-                  <button name="button" class="btn2" type="button" onclick="openSlideMenu()" onblur="closeSlideMenu()"></button>
+                  <button name="button" class="btn2" type="button" onfocusin="openSlideMenu()" onfocusout="closeSlideMenu()"></button>
                 </form>
               </div>
             </li></a>
@@ -85,48 +87,82 @@
         <a class="hide2 cyan" href="rejestracjaIILO.html">Rejestracja</a>
       </nav>
       <h1>Galeria zdjęć</h1>
+      <div class="szukaj">
+        <form class="wyszukiwarka" action="#" method="post">
+          <input class="wkład" type="text" value="" placeholder="Wyszukaj albumów " title="Wyszukaj albumów">
+        </form>
+      </div>
       <hr>
+      <h2>Kategorie</h2>
       <div class="xop-section">
        <ul class="xop-grid">
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 1</h3>
+         <div class="xop-box" id="akcjeMlodziezowe">
+            <h3>Akcje młodzieżowe</h3>
          </div>
         </a>
         </li>
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 2</h3>
+         <div class="xop-box" id="konkursy">
+            <h3>Konkursy</h3>
          </div>
         </a>
         </li>
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 3</h3>
+         <div class="xop-box" id="sportIILO">
+            <h3>Sport w II LO</h3>
          </div>
         </a>
         </li>
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 4</h3>
+         <div class="xop-box" id="targiIILO">
+            <h3>Targi edukacyjne</h3>
          </div>
         </a>
         </li>
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 5</h3>
+         <div class="xop-box" id="uroczystosci">
+            <h3>Uroczystości szkolne</h3>
          </div>
         </a>
         </li>
         <li>
         <a href="#">
-         <div class="xop-box">
-            <h3>Album 6</h3>
+         <div class="xop-box" id="koła">
+            <h3>Koła zainteresowań</h3>
+         </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+         <div class="xop-box" id="artIILO">
+            <h3>Sztuka w II LO</h3>
+         </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+         <div class="xop-box" id="tripsIILO">
+            <h3>Wycieczki edukacyjne</h3>
+         </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+         <div class="xop-box" id="wykładyIILO">
+            <h3>Wykłady i prelekcje</h3>
+         </div>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+         <div class="xop-box" id="wymianaIILO">
+            <h3>Wymiany międzynarodowe</h3>
          </div>
         </a>
         </li>

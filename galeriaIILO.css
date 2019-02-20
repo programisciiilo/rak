@@ -7,6 +7,9 @@ body{
 h1{
   font-size: 64px;
 }
+h2{
+  font-size: 36px;
+}
 hr{
   display: block;
   margin-left: 5%;
@@ -62,9 +65,7 @@ hr{
 }
 .menu li{
   margin: 0;
-  padding: 10px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 10px 0 10px;
   list-style: none;
   display: inline-block;
   font-size: 0.5cm ;
@@ -183,6 +184,8 @@ hr{
   .list{width: 300px;}
   .login p{font-size: 90%;}
   .xop-grid{margin-left: -8.5vw;}
+  .wyszukiwarka{width: 50vw;}
+  .wkład:focus{width: 50vw; transition: 1s;}
 }
 @media only screen and (min-width: 1349px) {
   .hamburger{display: none;}
@@ -290,7 +293,6 @@ a{
 .xop-box{
   width: 300px;
   height: 300px;
-  background-image: url("http://i.widelec.org/2nqp.jpg");
   background-size: cover;
   margin: 20px;
 }
@@ -322,11 +324,11 @@ h3:hover{
   height: 15%;
 }
 #slideMenu{
-  display: none;
+  height: 0px;
   text-decoration: none;
   position: sticky;
   top: 100px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 #slideMenu a{
@@ -353,4 +355,56 @@ h3:hover{
   background: transparent;
   cursor: pointer;
   transition: 0.3s transform linear;
+  transition-delay: 1s;
+}
+#akcjeMlodziezowe{
+  background-image: url('Akcje młodzieżowe.png');
+}
+#konkursy{
+  background-image: url('konkursyIILO.png');
+}
+#sportIILO{
+  background-image: url('sportIILO.png');
+}
+#targiIILO{
+  background-image: url('targiIILO.png');
+}
+#uroczystosci{
+  background-image: url('uroczystości.png');
+}
+#koła{
+  background-image: url('kołaIILO.png');
+}
+#artIILO{
+  background-image: url('artIILO.png');
+}
+#tripsIILO{
+  background-image: url('tripsIILO.png');
+}
+#wykładyIILO{
+  background-image: url('wykładyIILO.jpg');
+}
+#wymianaIILO{
+  background-image: url('wymianaIILO.png');
+}
+.szukaj{
+  margin: 3% 0 3% 0;
+  width: 100%;
+  height: 40px;
+}
+.wyszukiwarka{
+  margin: auto;
+  height: 40px;
+}
+.wkład{
+  width: 30vw;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 560;
+  border: 2px solid #DFDFDF;
+  margin-bottom: 3%;
+}
+.wkład:focus{
+  border: 3px solid rgba(0,139,139,0.8);
+  font-weight: 560;
 }
