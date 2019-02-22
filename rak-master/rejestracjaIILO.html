@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="keywords" content="galeria II LO,galeria II Liceum Racibórz,galeria II LO Racibórz,galeria II LO w Raciborzu,galeria II LO im. Adama Mickiewicza">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="Galeria II Liceum Ogólnokształcącego im. Adama Mickiewicza w Raciborzu">
+      <meta http-equiv="refresh" content="600">
+      <meta http-equiv="content-type" content="Galeria II Liceum Ogólnokształcącego im. Adama Mickiewicza w Raciborzu">
+      <link rel="stylesheet" href="galeriaIILO.css">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.2.1.js">
+	    </script>
+      <script type="text/javascript">
+		    $(window).on('scroll', function () {
+			       if($(window).scrollTop()){
+				           $('nav').addClass('black');
+			       }
+			       else{
+				           $('nav').removeClass('black');
+			           }
+		           })
+	   </script>
+    </head>
+    <body>
+      <nav class="navBar">
+        <div class="logo">
+          <a href="http://www.2loraciborz.pl/">
+            <img src='nom1.svg' alt="Logo szkoły">
+          </a>
+          <p class="hide">II Liceum Ogólnokształcące im. Adama Mickiewicza w Raciborzu</p>
+        </div>
+        <div class="menu">
+          <ul class="list">
+            <a class="hide" href="http://www.2loraciborz.pl/zasady-naboru.html"><li>Rekrutacja</li></a>
+            <a class="hide" href="http://absolwenci.2loraciborz.pl/"><li>Absolwenci</li></a>
+            <a class="hide" href="http://www.2loraciborz.pl/plan-lekcji.html"><li>Plan Lekcji</li></a>
+            <a class="hide" href="galeriaIILO.html"><li style="color: #000000">Galeria</li></a>
+            <a class="hide" href="http://www.2loraciborz.pl/kalendarium.html"><li>Kalendarium</li></a>
+            <a class="hide"><li>Rejestracja</li></a>
+            <a class="hamburger"><li>
+              <div class="menu">
+                <form class="hamMenu" action="galeriaIILO.html" method="post">
+                  <button name="button" class="btn2" type="button"></button>
+                </form>
+              </div>
+            </li></a>
+            <li style="width: 65px;">
+              <div class="middle">
+                <form class="search-box" action="galeriaIILO.html" method="post">
+                  <input class="input" type="text" value="">
+                  <button name="button" class="btn" type="button"></button>
+                </form>
+              </div>
+         </li>
+         </ul>
+         <script type="text/javascript">
+          $('.btn').on('click',function(){
+            $('.input').toggleClass('onclicked');
+            $('.btn').toggleClass('close');
+          });
+         </script>
+        </div>
+      </nav>
+      <div class="login">
+        <form class="loginForm" action="rejestracjaIILO.html" method="get">
+          <p>Zaloguj się na stronę szkoły</p>
+        </form>
+      </div>
+      <section class="footer">
+        <div id="footerElements">
+          <a href="https://pl-pl.facebook.com/lo2rac/" title="Oficjalny profil II LO w Raciborzu na Facebooku" id="facebook">
+            <p>F</p>
+          </a>
+          <a href="https://www.instagram.com/2loraciborz/" title="Oficjalny profil II LO w Raciborzu na Instagramie" id="instagram">
+            <p>I</p>
+          </a>
+          <hr>
+          <p>II Liceum Ogólnokształcące im. Adama Mickiewicza w Raciborzu</p>
+          <p>ul. kard. Stefana Wyszyńskiego 4</p>
+          <p>47-400 Racibórz</p>
+        </div>
+        <p class="ver">version: beta</p>
+      </section>
+    </body>
+  </html>
