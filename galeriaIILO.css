@@ -4,6 +4,9 @@ body{
   text-align: center;
   margin: 0;
 }
+.corpus{
+background-color: #FFFFFF;
+}
 h1{
   font-size: 64px;
 }
@@ -186,11 +189,15 @@ hr{
   .xop-grid{margin-left: -8.5vw;}
   .wyszukiwarka{width: 50vw;}
   .wkład:focus{width: 50vw; transition: 1s;}
+  .corpus{margin: 0;}
 }
 @media only screen and (min-width: 1349px) {
   .hamburger{display: none;}
   .slideMenu{display: none;}
   .xop-box:hover{transform: scale(1.1);}
+  .corpus{margin: 0 8% 0 8%;}
+  body{background-image: url('https://i.imgur.com/EdAGGFS.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;}
+  h1{padding-top: 70px;}
 }
 .btn2{
   position: relative;
@@ -330,7 +337,7 @@ h3:hover{
   text-decoration: none;
   position: sticky;
   top: 100px;
-  margin-bottom: 20px;
+  margin: 0;
   overflow: hidden;
 }
 #slideMenu a{
